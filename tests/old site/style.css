@@ -14,11 +14,6 @@ body {
 	overflow-x: hidden;
 	font-family: "Luna";
 	background-color: #171E2C;
-	font-weight: normal;
-	letter-spacing: 0.2em;
-	text-align: center;
-	margin: 0;
-	padding: 1em 0;
 }
 
 header {
@@ -46,7 +41,7 @@ header::before {
 	right: 0;
 	top: 0;
 	display: block;
-	background-image: url(images/2.png);
+	background-image: url(BG.png);
 	background-size: cover;
 	transform-origin: center center 0;
 	transform: translateZ(-1px) scale(2);
@@ -55,9 +50,9 @@ header::before {
 }
 
 header * {
-	font-weight: normal; 
+	font-weight: normal;
 	letter-spacing: 0.2em;
 	text-align: center;
 	margin: 0;
-	padding: 1em 0;
+
 }
