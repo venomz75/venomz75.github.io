@@ -67,10 +67,9 @@ body {
   }
 
 .title {
-  display: inline;
   position: absolute;
   top: 400px;
-  width: 1900px;
+  width: 100%;
   color: #0A1729;
   font-size: 50px;
   font-family: 'Permanent Marker', cursive;
