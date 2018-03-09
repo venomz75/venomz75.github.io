@@ -3,7 +3,6 @@ body {
   margin: 0;
   font-family: 'Itim', cursive;
 }
-
 .non-parallax{
   position: fixed;
   overflow: visible;
@@ -68,7 +67,7 @@ body {
 .content {
   color: #fff;
   position: absolute;
-  top: 980px;
+  top: 900px;
   background: #0A1729;
   min-height: 850px;
   padding-left: 400px;
