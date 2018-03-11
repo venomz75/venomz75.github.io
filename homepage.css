@@ -24,7 +24,7 @@
 
 .time{
   position: absolute;
-  top: 200px;
+  top: 300px;
   width: 95%;
   color: #ffffff;
   font-size: 100pt;
@@ -36,7 +36,7 @@
 
 .weekday{
   position: absolute;
-  top: 295px;
+  top: 395px;
   width: 95%;
   color: #ffffff;
   font-size: 85pt;
@@ -47,7 +47,7 @@
 
 .date{
   position: absolute;
-  top: 360px;
+  top: 460px;
   width: 95%;
   color: #ffffff;
   font-size: 35pt;
