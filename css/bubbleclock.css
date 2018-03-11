@@ -1,44 +1,30 @@
-.homepage{
-  position: fixed;
-  overflow: visible;
-  background-image: url('img/homepage2.jpg');
-  background-color: black;
-  width: 100%;
-  height:984px;
-  left: 0;
-  top: 0;
-  background-position: bottom center;
-  background-repeat: repeat-x;
-  background-size: 1920px 984px;
-}
-
 @font-face {
   font-family: "Time";
-  src: url("font/steelfish rg.ttf");
+  src: url("../font/steelfish rg.ttf");
 }
 
 @font-face {
   font-family: "Day";
-  src: url("font/la Compagnie des Ombres.ttf");
+  src: url("../font/la Compagnie des Ombres.ttf");
 }
 
 .time{
   position: absolute;
   top: 300px;
   width: 95%;
-  color: #ffffff;
+  color: #2C3E50;
   font-size: 100pt;
   font-family: 'Time', cursive;
   margin: 0;
   text-align: center;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .weekday{
   position: absolute;
   top: 395px;
   width: 95%;
-  color: #ffffff;
+  color: #E74C3C;
   font-size: 85pt;
   font-family: 'Day', cursive;
   margin: 0;
@@ -49,7 +35,7 @@
   position: absolute;
   top: 460px;
   width: 95%;
-  color: #ffffff;
+  color: #3498DB;
   font-size: 35pt;
   font-family: 'Time', cursive;
   margin: 0;
