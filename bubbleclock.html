@@ -23,23 +23,21 @@
   </head>
 
   <body>
-    <div class="time">
-      <span id="date_time_time"></span>
-      <script type="text/javascript">window.onload = date_time_time('date_time_time');</script>
+    <div class = "unselectable">
+      <div class="time">
+        <span id="date_time_time"></span>
+        <script type="text/javascript">window.onload = date_time_time('date_time_time');</script>
+      </div>
+      <div class="weekday">
+        <span id="date_time_weekday"></span>
+        <script type="text/javascript">window.onload = date_time_weekday('date_time_weekday');</script>
+      </div>
+      <div class="date">
+        <span id="date_time_date"></span>
+        <script type="text/javascript">window.onload = date_time_date('date_time_date');</script>
+      </div>
     </div>
-
-    <div class="weekday">
-      <span id="date_time_weekday"></span>
-      <script type="text/javascript">window.onload = date_time_weekday('date_time_weekday');</script>
-    </div>
-
-    <div class="date">
-      <span id="date_time_date"></span>
-      <script type="text/javascript">window.onload = date_time_date('date_time_date');</script>
-    </div>
-
     <canvas></canvas>
-    
     <script src="js/bubble.js"></script>
   </body>
 </html>
