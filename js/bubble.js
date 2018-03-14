@@ -1,36 +1,22 @@
-var canvas = document.querySelector('canvas');
+//Created: 11/03/18 by Adam Gibbs
 
+var canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 console.log(canvas);
 
 var c = canvas.getContext('2d');
 
-/* for (var i = 0; i < 1; i++) {
-  var x = Math.random() * window.innerWidth;
-  var y = Math.random() * window.innerHeight;
-  var r = Math.floor(Math.random() * 255);
-  var g = Math.floor(Math.random() * 255);
-  var b = Math.floor(Math.random() * 255);
-  var rad = Math.floor(Math.random() * 300);
-
-  c.beginPath();
-  c.arc(x, y, rad, 0, Math.PI * 2, false);
-  c.strokeStyle = "rgba("+r+","+g+","+b+",0)";
-  c.fill();
-  c.fillStyle = "rgba("+r+","+g+","+b+",255)";
-  c.stroke();
-}
-
- */
+//mouse position
 var mouse = {
   x: undefined,
   y: undefined
 }
 
+//maximum radius of circles
 var maxRadius = 40;
-//var minRadius = 2;
 
+//colour scheme
 var colourArray = [
   '#2C3E50',
   '#E74C3C',
@@ -39,19 +25,21 @@ var colourArray = [
   '#2980B9',
 ]
 
+//mouse movement listener, logs x and y coordinates
 window.addEventListener('mousemove', function(event) {
   mouse.x = event.x;
   mouse.y = event.y;
   console.log(mouse);
 })
 
+//fits the inner screen perfectly and redraws the circles when resized to fill screen
 window.addEventListener('resize', function(){
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-
   init();
 })
 
+//OOP function for circles so they can be called easily with a for loop
 function Circle(x, y, dx, dy, radius) {
   this.x = x;
   this.y = y;
@@ -61,6 +49,7 @@ function Circle(x, y, dx, dy, radius) {
   this.minRadius = radius;
   this.colour = colourArray[Math.floor(Math.random() * colourArray.length)];
 
+  //draws circle
   this.draw = function() {
     c.beginPath();
     c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
@@ -68,6 +57,7 @@ function Circle(x, y, dx, dy, radius) {
     c.fill();
   }
 
+  //wall collision detection, inverts velocities on collision
   this.update = function() {
     if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
       this.dx = -this.dx;
@@ -79,7 +69,7 @@ function Circle(x, y, dx, dy, radius) {
     this.x += this.dx;
     this.y += this.dy;
 
-    //interactivity
+    //interactivity with mouse
     if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50 ) {
       if (this.radius < maxRadius)
       this.radius += 1;
@@ -91,12 +81,11 @@ function Circle(x, y, dx, dy, radius) {
   }
 }
 
-
+//circle drawing function
 var circleArray = [];
 
 function init(){
-
-  circleArray = [];
+  circleArray = []; //clears circles when resizing window before redrawing
 
   for (var i = 0; i < 2000; i++) {
     var radius = (Math.random() * 3 + 1);
@@ -108,6 +97,7 @@ function init(){
   }
 }
 
+  //makes every circle in the array have its own random velocity and size
   function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, innerWidth, innerHeight);
@@ -117,5 +107,6 @@ function init(){
     }
 
   }
+
 init();
 animate();
