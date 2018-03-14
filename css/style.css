@@ -1,7 +1,7 @@
 body {
   background: #0A1729;
   margin: 0;
-  font-family: 'Itim', cursive;
+  font-family: 'Catamaran', sans-serif;
 }
 .non-parallax{
   position: fixed;
@@ -101,20 +101,24 @@ body {
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
   }
 
   .navbar a {
-    font-family: 'Itim', cursive;
+    font-family: 'Quicksand', sans-serif;
     float: left;
     display: block;
     color: #0C63AE;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
     font-size: 25px;
+    margin: 0;
+
   }
 
   .navbar a:hover {
-    color: #fff;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
   }
