@@ -63,6 +63,7 @@ function Ball(x, y, dx, dy, radius, color) {
 	this.update = function() {
 		if (this.y + this.radius + this.dy > canvas.height) {
 			this.dy = (-this.dy * friction);
+			this.dx = (this.dx * friction);
 		}
 		else {
 			this.dy += gravity;
