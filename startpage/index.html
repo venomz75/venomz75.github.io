@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<link rel='stylesheet' type='text/css' href='css/homepage.css'/>
+		<link rel='stylesheet' type='text/css' href='css/fonts.css'/>
+		<link rel="stylesheet" href="css/bubbleclock.css"/>
+		<script type='text/javascript' src='js/fonticon.js'></script>
+	</head>
+
+	<body>
+		<div class='total-container'>
+
+			<script src="js/clock.js"></script>
+			<div class = "unselectable">
+				<div class="time">
+					<span id="date_time_time"></span>
+					<script type="text/javascript">window.onload = date_time_time('date_time_time');</script>
+				</div>
+				<div class="weekday">
+					<span id="date_time_weekday"></span>
+					<script type="text/javascript">window.onload = date_time_weekday('date_time_weekday');</script>
+				</div>
+				<div class="date">
+					<span id="date_time_date"></span>
+					<script type="text/javascript">window.onload = date_time_date('date_time_date');</script>
+				</div>
+				<div class="greeting">
+					<h1>Good evening, Adam.</h1>
+				</div>
+			</div>
+
+			<div class='container'>
+				<div class='favorites'>
+					<div class='list'>
+						<p>Media</p>
+						<ul>
+							<li><a href='https://www.youtube.com'>YouTube</a></li>
+							<li><a href='http://www.twitch.tv/'>Twitch</a></li>
+							<li><a href='http://www.reddit.com'>Reddit</a></li>
+							<li><a href='https://www.pinterest.co.uk/'>Pinterest</a></li>
+							<li><a href='https://soundcloud.com/'>SoundCloud</a></li>
+							<li><a href='https://open.spotify.com'>Spotify</a></li>
+						</ul>
+					</div>
+
+					<div class='list'>
+						<p>Boards</p>
+						<ul>
+							<li><a href='http://boards.4chan.org/wg/catalog'>/wg/ - Wallpapers/General</a></li>
+							<li><a href='http://boards.4chan.org/g/catalog'>/g/ - Technology</a></li>
+							<li><a href='http://boards.4chan.org/wsg/catalog'>/wsg/ - Worksafe GIF</a></li>
+							<li><a href='http://boards.4chan.org/v/catalog'>/v/ - Video Games</a></li>
+							<li><a href='http://boards.4chan.org/fit/catalog'>/fit/ - Fitness</a></li>
+							<li><a href='https://nik.bot.nu/'>Imageboard Scraper</a></li>
+						</ul>
+					</div>
+
+					<div class='list'>
+						<p>Personal</p>
+						<ul>
+							<li><a href='http://www.gmail.com'>Mail</a></li>
+							<li><a href='https://moodle.lec.ac.uk/'>Education</a></li>
+							<li><a href='https://web.whatsapp.com/'>WhatsApp</a></li>
+							<li><a href='https://www.amazon.co.uk/'>Amazon</a></li>
+							<li><a href='https://steamcommunity.com/id/VenomZ75/home/'>Steam</a></li>
+							<li><a href='http://venomz75.github.io'>Veyonics</a></li>
+						</ul>
+					</div>
+
+					<div class='list'>
+						<p>Develop</p>
+						<ul>
+							<li><a href='https://www.github.com'>GitHub</a></li>
+							<li><a href='http://codepen.io'>CodePen</a></li>
+							<li><a href='http://www.awwwards.com'>Awwwards</a></li>
+							<li><a href='http://www.sitepoint.com'>SitePoint</a></li>
+							<li><a href='https://web-development.zeef.com'>Web Dev Resources</a></li>
+							<li><a href='http://wwwhere.io/'>wwwhere</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<form method="get" action="http://www.google.com/search">
+					<input class='search' name='q' placeholder="looking for something else?" type='text' onkeydown='return handleKeyDown(event)' autocomplete='off' spellcheck='false' autofocus autocapitalize='none' autocorrect='off'/>
+				</form>
+
+			</div>
+		</div>
+	</body>
+</html>

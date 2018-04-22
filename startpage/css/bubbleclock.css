@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Time";
+  src: url("../font/steelfish rg.ttf");
+}
+
+@font-face {
+  font-family: "Day";
+  src: url("../font/la Compagnie des Ombres.ttf");
+}
+
+@font-face {
+  font-family: "Greeting";
+  src: url("../font/KaushanScript-Regular.ttf");
+}
+
+.time{
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  color: #ED8F5B;
+  font-size: 100pt;
+  font-family: 'Time', cursive;
+  margin: 0;
+  text-align: center;
+  opacity: 1;
+}
+
+.weekday{
+  position: absolute;
+  top: 245px;
+  width: 100%;
+  color: #E36D60;
+  font-size: 85pt;
+  font-family: 'Day', cursive;
+  margin: 0;
+  text-align: center;
+}
+
+.date{
+  position: absolute;
+  top: 310px;
+  width: 100%;
+  color: #9C4368;
+  font-size: 35pt;
+  font-family: 'Time', cursive;
+  margin: 0;
+  text-align: center;
+}
+
+h1{
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  color: #E1EFA4;
+  font-size: 52pt;
+  font-family: 'Greeting', cursive;
+  margin: 0;
+  text-align: center;
+  font-weight: 100;
+}
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
