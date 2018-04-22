@@ -50,6 +50,7 @@ p, li, a {
   padding-right: 100%; }
 
 .list {
+  font-family: "Roboto", sans-serif;
   position: relative;
   top: 150px;
   display: inline-block;
@@ -95,7 +96,7 @@ form {
   margin-right: -4px;
   padding: 5px;
   background: #000;
-  font-family: "Roboto", "Consolas", "Helvetica", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   text-align: center;
   letter-spacing: 0.5px;
