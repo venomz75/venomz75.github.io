@@ -25,7 +25,7 @@ html {
 
 p, li, a {
   color: #983875;
-  font-family: "Roboto", "Consolas", "Helvetica", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 2px; }
