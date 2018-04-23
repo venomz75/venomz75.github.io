@@ -47,7 +47,7 @@
   text-align: center;
 }
 
-h1{
+.greeting {
   position: absolute;
   top: 350px;
   width: 100%;

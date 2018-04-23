@@ -7,6 +7,7 @@
       months = new Array('JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER');
       d = date.getDate();
       suffix = 'th';
+      timeofday = '';
       day = date.getDay();
       days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
       h = date.getHours();
@@ -31,7 +32,7 @@
     {
       result = days[day];
       document.getElementById(id).innerHTML = result;
-      setTimeout('date_time_day("'+id+'");','1000');
+      setTimeout('date_time_weekday("'+id+'");','1000');
       return true;
     }
 
@@ -56,3 +57,32 @@
       setTimeout('date_time_date("'+id+'");','1000');
       return true;
     }
+
+  function date_time_timeofday(id)
+    {
+      if(h>=6 && h<12)
+        {
+          timeofday = 'morning, ';;
+        }
+      if(h>=12 && h<18)
+        {
+          timeofday = 'afternoon, ';
+        }
+      if(h>=18 && h<22)
+        {
+          timeofday = 'evening, ';
+        }
+      if(h>=22 && h<=24)
+        {
+          timeofday = 'night, ';
+        }
+      if(h>=0 && h<6)
+        {
+          timeofday = 'night, ';
+        }
+      result = 'Good '+timeofday+'Adam.';
+      console.log(timeofday);
+      document.getElementById(id).innerHTML = result;
+      setTimeout('date_time_timeofday("'+id+'");','1000');
+      return true;
+      }
