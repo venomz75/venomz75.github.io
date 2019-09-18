@@ -62,7 +62,6 @@ function Circle(x, y, dx, dy, radius) {
     if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
       this.dx = -this.dx;
     }
-
     if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
       this.dy = -this.dy;
     }
@@ -76,7 +75,6 @@ function Circle(x, y, dx, dy, radius) {
     } else if (this.radius > this.minRadius){
       this.radius -= 1;
     }
-
     this.draw();
   }
 }
@@ -98,15 +96,13 @@ function init(){
 }
 
   //makes every circle in the array have its own random velocity and size
-  function animate() {
-    requestAnimationFrame(animate);
-    c.clearRect(0, 0, innerWidth, innerHeight);
-
-    for (var i = 0; i < circleArray.length; i++) {
-      circleArray[i].update();
-    }
-
+function animate() {
+  requestAnimationFrame(animate);
+  c.clearRect(0, 0, innerWidth, innerHeight);
+  for (var i = 0; i < circleArray.length; i++) {
+    circleArray[i].update();
   }
+}
 
 init();
 animate();
