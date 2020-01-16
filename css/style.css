@@ -1,41 +1,27 @@
 /* Body */
 body {
-  background: #0A1729;
+  background-color: #f7f2e0;
   margin: 0;
-  font-family: 'Catamaran', sans-serif;
+  font-family:Tahoma, Helvetica, Arial;
 }
-
-.title {
-  position: absolute;
-  top: 400px;
-  width: 100%;
-  color: #0A1729;
-  font-size: 50px;
-  font-family: 'Permanent Marker', cursive;
-  text-shadow: 3px 3px 2px #153763;
-  margin: 0;
-  text-align: center;
-}
-
+  
 .content {
-  color: #fff;
+  color: #000;
   position: absolute;
-  top: 900px;
-  background: #0A1729;
-  min-height: 850px;
+  top: 100px;
+  background-color: #f7f2e0;
   padding-left: 400px;
   padding-right: 400px;
   font-size: 20px;
 }
-
+  
 .content h1 {
-  margin-top: 150px;
-  color: #fff;
+  margin-top: 100px;
+  color: #000;
   font-size: 2em;
   text-align: center;
-}
-
-
+}  
+  
 
 /* Navbar */
 .navbar {
@@ -44,81 +30,19 @@ body {
   top: 0;
   left: 0;
 }
-
+  
 .navbar a {
-  font-family: 'Quicksand', sans-serif;
   float: left;
   display: block;
-  color: #0C63AE;
+  color: rgb(160, 125, 200);
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
   font-size: 25px;
   margin: 0;
 }
-
+  
 .navbar a:hover {
-  color: #ffffff;
-  border-style: solid;
-  border-width: 1px;
-}
-
-
-
-/* Parallax */
-.parallax-container {
-  position: fixed;
-  overflow: visible;
-  width: 100%;
-  height: 984px;
-  background-position: bottom center;
-  background-repeat: repeat-x;
-  background-size: 1920px 984px;
-}
-
-.parallax-layer {
-  width: 100%;
-  height: 984px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-position: bottom center;
-  background-repeat: repeat-x;
-  background-size: 1920px 984px;
-}
-
-.layer-1 {
-  z-index: 5;
-  background: #9CD2F9 url('../img/L1.png');
-  background-size: 1920px 984px;
-}
-
-.layer-2 {
-  z-index: 5;
-  background-image: url('../img/L2.png');
-}
-
-.layer-3 {
-  z-index: 10;
-  background-image: url('../img/L3.png');
-}
-
-.layer-4 {
-  z-index: 15;
-  background-image: url('../img/L4.png');
-}
-
-.layer-5 {
-  z-index: 20;
-  background-image: url('../img/L5.png');
-}
-
-.layer-6 {
-  z-index: 25;
-  background-image: url('../img/L6.png');
-}
-
-.layer-7 {
-  z-index: 25;
-  background-image: url('../img/L7.png');
+  color:  #f3f2ee;
+  background-color: rgb(160, 125, 200);
 }
