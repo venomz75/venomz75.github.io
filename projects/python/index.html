@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python | venomz75</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="../../index.html">Home</a>
+      <a href="../nodejs/index.html">Node.js</a>
+      <a href="">Python</a>
+      <a href="../lua/index.html">Lua</a>
+    </div>
+    
+    <div class="content">
+      <h1>Python projects</h1>
+
+      <p>
+        While I am quite familiar with Python, there's only one personal project in which I chose Python over another language. This was due to the large amount of library support for the task at hand.<br> <br> <br>
+
+        <b><a href="https://github.com/venomz75/papeScrape">papeScrape</a></b> <br>
+        papeScrape is a web scraper for the notorious imageboard 4chan. The name comes from the term "pape" used on /wg/ (4chan's wallpaper board), short for "wallpaper". 
+        The "scrape" part is self explanatory as it scrapes images from a thread of your choice. <br> <br>
+
+        As I am into system customisation on both desktop and mobile platforms, I often download wallpapers to change the look and feel of my system. 
+        It just so happens that 4chan's /wg/ board has a lot of good wallpapers being shared by other users.
+        However, downloading an entire thread of good wallpapers can be tedious, so I finally had an excuse to try my hand at webscraping. <br> <br>
+        
+        It didn't take long for me to feature creep my simple project to have a multitude of unplanned features:
+        <ul>
+          <li>Choose ANY board, not just /wg/.</li>
+          <li>Filter boards with NSFW content. Unfortunately /wg/ counts as NSFW as such content is permitted there.</li>
+          <li>Choose any thread within your chosen board, and relax as the script does the rest.</li>
+          <li>Multithreading support to allow for multiple concurrent downloads, further classifying this as a batch download tool.</li>
+        </ul>
+
+        <img src="img/papeScrape1.png" alt="papeScrape 1" style="width:661px;height:418px;"> <br>
+        <img src="img/papeScrape3.png" alt="papeScrape 3" style="width:661px;height:418px;"> <br> <br>
+        The project was a success, and most of the features I wanted are in place. However, the controversial nature of the site the tool accesses does make me contemplate refactoring this tool for a more general purpose.
+      </p>
+    </div>
+  </body>
+</html>
