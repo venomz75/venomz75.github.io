@@ -1,2 +1,2 @@
-# venomz75.github.io
-This is my website where I taught myself some HTML, CSS and JavaScript. Most of this work is rather simple, so I plan to revamp the website to act as a proper portfolio.
+# [venomz75.github.io](https://venomz75.github.io/)
+This is a website I put together to showcase some projects I've worked on. Currently under construction.

@@ -21,24 +21,35 @@
       <h1>C++ projects</h1>
 
       <p>
-        Although I'm more used to Java, I enjoy using C++ as it shares many similarities with it. However, I do miss garbage collection sometimes. I usually
-        use C++ when working on console applications/ASCII art, and the speed is hard to beat.<br> <br> <br>
+        <!--Although I'm more used to Java, I enjoy using C++ as it shares many similarities with it. However, I do miss garbage collection sometimes. I usually
+        use C++ when working on console applications/ASCII art, and the speed is hard to beat.<br> <br> <br>--->
 
-        <b><a href="https://github.com/venomz75/fractalASCII">fractalASCII</a></b> <br>
+        <b><a href="https://github.com/venomz75/fractalASCII" style="font-size:26px;">fractalASCII</a></b> <br>
         fractalASCII is a collection of ASCII art fractal generators. So far I've only finished one fractal, but I'd like to add more soon.<br> <br>
 
-        <u><a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle">Sierpinski Triangle</a></u> <br>
-        The Sierpinski Triangle is a fractal in the shape of an triangle, further divided into smaller triangles. Here's how my version works:
+        <u><a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle">Sierpiński Triangle</a></u> <br>
+        The Sierpiński Triangle is a fractal in the shape of a triangle, further divided into smaller triangles. Here's how my implementation works:
         <ol>
           <li>Input the desired number of iterations <i>n</i>.</li>
-          <li>Creates a triangle of height <i>2<sup>n</sup></i></li>
+          <li>Creates a triangle of height <i>2<sup> n</sup></i>.</li>
           <li>The central triangle is removed after dividing the triangle into 4.</li>
           <li>Step 3 is now carried out on the other congruent triangles, resulting in more triangles with half the height.</li>
           <li>Step 4 is repeated recursively until further iterations would create triangles of a height lower than 2.</li>
         </ol>
- 
-        <img src="./img/triangle.PNG" alt="Sierpinski Triangle" style="max-width:100%;height:auto;"> <br> <br>
-        Playing with fractals have been a very enjoyable experience so I look forward to working with them more.
+        <img src="./img/triangle.PNG" alt="Sierpinski Triangle" style="max-width:100%;height:auto;"> <br> <br> <br>
+
+        <u><a href="https://en.wikipedia.org/wiki/Sierpinski_carpet">Sierpiński Carpet</a></u> <br>
+        Similar to the previous fractal, the Sierpiński Carpet is a fractal in the shape of a square missing the it's center, composed of smaller squares also missing their center.
+        Here's how my version works:
+        <ol>
+          <li>Input the desired number of iterations <i>n</i>.</li>
+          <li>Creates a square of length <i>3<sup> n</sup></i>.</li>
+          <li>A hole of <i><sup>1</sup>&frasl;<sub>3</sub></i> of the square's area is created in the center of our square.</li>
+          <li>In each of the 8 new squares around the hole, new holes are created with <i><sup>1</sup>&frasl;<sub>3</sub></i> of the original hole's area.</li>
+          <li>This is recursively repeated until there are no more holes to create.</li>
+        </ol>
+        <img src="./img/carpet.png" alt="Sierpinski Triangle" style="max-width:100%;height:auto;"> <br> <br>
+        <b>More soon...</b>
       </p>
     </div>
   </body>
