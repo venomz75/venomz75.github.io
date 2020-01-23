@@ -25,10 +25,15 @@
         use C++ when working on console applications/ASCII art, and the speed is hard to beat.<br> <br> <br>--->
 
         <b><a href="https://github.com/venomz75/fractalASCII" style="font-size:26px;">fractalASCII</a></b> <br>
-        fractalASCII is a collection of ASCII art fractal generators. So far I've only finished one fractal, but I'd like to add more soon.<br> <br>
+        fractalASCII is a collection of ASCII art fractal generators. So far I've added 3 fractals, but I plan to add more. 
+        It features a Bash menu which brings the individual programs together. Below are some images and details on the fractals implemented:<br>
+        <img src="./img/menu.png" alt="Menu" style="max-width:100%;height:auto;;"> <br> <br>
+
 
         <u><a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle">Sierpiński Triangle</a></u> <br>
+        
         The Sierpiński Triangle is a fractal in the shape of a triangle, further divided into smaller triangles. Here's how my implementation works:
+        <img src="./img/triangle.PNG" alt="Sierpinski Triangle" align="left" style="max-width:100%;height:auto;padding-right:2.5%;">
         <ol>
           <li>Input the desired number of iterations <i>n</i>.</li>
           <li>Creates a triangle of height <i>2<sup> n</sup></i>.</li>
@@ -36,11 +41,12 @@
           <li>Step 3 is now carried out on the other congruent triangles, resulting in more triangles with half the height.</li>
           <li>Step 4 is repeated recursively until further iterations would create triangles of a height lower than 2.</li>
         </ol>
-        <img src="./img/triangle.PNG" alt="Sierpinski Triangle" style="max-width:100%;height:auto;"> <br> <br> <br>
+         <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
         <u><a href="https://en.wikipedia.org/wiki/Sierpinski_carpet">Sierpiński Carpet</a></u> <br>
         Similar to the previous fractal, the Sierpiński Carpet is a fractal in the shape of a square missing the it's center, composed of smaller squares also missing their center.
-        Here's how my version works:
+        Here's how my version works: <br>
+        <img src="./img/carpet.png" alt="Sierpinski Carpet" align="left" style="max-width:100%;height:auto;padding-right:2.5%;">
         <ol>
           <li>Input the desired number of iterations <i>n</i>.</li>
           <li>Creates a square of length <i>3<sup> n</sup></i>.</li>
@@ -48,7 +54,18 @@
           <li>In each of the 8 new squares around the hole, new holes are created with <i><sup>1</sup>&frasl;<sub>3</sub></i> of the original hole's area.</li>
           <li>This is recursively repeated until there are no more holes to create.</li>
         </ol>
-        <img src="./img/carpet.png" alt="Sierpinski Triangle" style="max-width:100%;height:auto;"> <br> <br>
+         <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+        <u><a href="https://en.wikipedia.org/wiki/Vicsek_fractal">Vicsek Fractal</a></u> <br>
+        The Vicsek fractal consists of a central shape being recursively surrounded by self similar shapes in 4 cardinal directions. <br>
+        <img src="./img/vicsek.png" alt="Sierpinski Triangle" align="left" style="max-width:100%;height:auto;padding-right:2.5%;">
+        <ol>
+          <li>Input the desired number of iterations <i>n</i>.</li>
+          <li>Fill the grid with characters in the grid of size <i>3<sup> n</sup></i>.</li>
+          <li>The corners of size <i><sup>1</sup>&frasl;<sub>9</sub></i> of the square's area are removed.</li>
+          <li>In each of the 5 remaining squares of area <i><sup>1</sup>&frasl;<sub>9</sub></i>, the same step is repeated recursively until no more corners can be removed.</li>
+        </ol>
+         <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
         <b>More soon...</b>
       </p>
     </div>
